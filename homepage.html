@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="icon" href="./assets/iconMain.png" type="image/x-icon">
+  <title>PortfoliYou</title>
+  <script src="https://kit.fontawesome.com/1047494427.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <script src="/js/main.js"></script>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="/assets/logo-transparent.png" class="logo">
+        <ul>
+          <li><a onclick="moveToHome()"><span>Home</span></a></li>
+          <li><a onclick="moveToAbout()">About Us</a></li>
+          <li><a onclick="moveToContact()">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>A Portfolio Website Hub for Developers</p>
+        <h1>Welcome to Portfoli<span>You</span></h1>
+      </div>
+    </div>
+    <!-- JONATHAN SECTION -->
+    <div id="jonathan">
+      <div class="containter">
+        <div class="row">
+          <div class="jon-col-1">
+            <h1 class="sub-title">About Jonathan:</h1>
+            <p>Jonathan is a senior at Farmingdale State College, Majoring in Computer Science. He is set to graduate in the Spring
+              of 2023, and is openely looking for a position for after he graduates. Jonathan specializes in java programming, but has 
+              experience in languages like python, C++, SQL, HTML, js, and CSS. Jonathan enjoys digital design and programming, so gaining
+              more experience in front end development is a priority for him.  
+            </p>
+          </div>
+          <div class="jon-col-2">
+            <img src="/assets/myself.png">
+            <!-- <a href="/html/jonathan.html" target="_blank"> -->
+            <button onclick="changeToJon()" class="button-jon" role="button"><span class="text">See More</span><span>Click here</span></button>
+            <!-- </a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- BADAR SECTION -->
+    <div id="badar">
+      <div class="containter">
+        <div class="row">
+          <div class="badar-col-1">
+            <h1 class="sub-title">About Badar:</h1>
+            <p>
+              Badar is graduating in the fall of 2023 and is an experienced programmer and computer science major, as well as 
+              a fashion influencer on the side. Badar  
+            </p>
+          </div>
+          <div class="badar-col-2">
+            <img src="/assets/ba1.jpg">
+            <button onclick="changeToBadar()" class="button-badar" role="button"><span class="text">See More</span><span>Click here</span></button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- NEW USER SECTION -->
+    <div id="newU">
+      <div class="containter">
+        <div class="row">
+          <div class="newU-col-1">
+            <h1 class="sub-title">This Could be Your Portfolio!</h1>
+            <p>Our service is a great way to present yourself as a programmer, visit our contact page to inquire about publishing your own 
+              portfolio page on our cite: Just select "Developer Addition Request"! 
+            </p>
+          </div>
+          <div class="newU-col-2">
+            <img src="/assets/unknown.png">
+            <button onclick="moveToContact()" class="button-newU" role="button">This Could Be You!</button>
+
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- SERVICES SECTION -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Portfli<span>You</span> Services:</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-address-card"></i>
+            <h2>Portfolio Showcases</h2>
+            <p>Our service allows developers to show off their strengths and get their resume out to potential employers</p>
+            <a onclick="moveToHome()">more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-network-wired"></i>
+            <h2>Developer Connect</h2>
+            <p>Employers, as well as anyone else interested can inquire further about a developers experience or projects, as well as reach out to them directly for 
+              any information
+            </p>
+            <a onclick="moveToContact()">more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-hammer"></i>
+            <h2>Skill Building</h2>
+            <p>Paricipating in this portflio showcase can help hone web development and UI design skills that can be important for industry.</p>
+            <a onclick="moveToAbout()">more</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="copyrightHome">
+        <p>© Copyright 2023 PortfoliYou</p>
+      </div>
+    </div>
+    
+</body>
+
+</html>

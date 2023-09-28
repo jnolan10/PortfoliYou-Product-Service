@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/1047494427.js" crossorigin="anonymous"></script>
+  <title>PortfoliYou</title>
+</head>
+
+<body>
+  <script src="/js/main.js"></script>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="/assets/logo-transparent.png" class="logo">
+        <ul>
+          <li><a onclick="moveToHome()">Home</a></li>
+          <li><a onclick="moveToAbout()"><span>About Us</span></a></li>
+          <li><a onclick="moveToContact()">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>A Portfolio Website Hub for Developers</p>
+        <h1>Welcome to Portfoli<span>You</span></h1>
+      </div>
+    </div>
+
+    <div class="about">
+      <div class="btn-box">
+        <button id="btn1" onclick="openMagic()"><i class="fa-solid fa-wand-magic-sparkles"></i> Magic</button>
+        <button id="btn2" onclick="openQuick()"><i class="fa-solid fa-calendar-days"></i> Quick</button>
+        <button id="btn3" onclick="openTransparent()"><i class="fa-solid fa-ghost"></i> Transparent</button>
+      </div>
+      <div id="content1" class="content">
+        <div class="content-left">
+          <h1>Integrated Like Magic</h1>
+          <p>When you chose to add a portfolio to our cite, you can ensure the integration will be smooth.
+            We will incoprorate any stylistic changes you request. We can incorporate any skills that you have
+            besides program development that you may want to showcase to employers, or whoever else!
+          </p>
+        </div>
+      </div>
+      <div id="content2" class="content">
+        <div class="content-left">
+          <h1>Fast response</h1>
+          <p>When you contact us through our form, you can guarentee we will respond 
+            in a prompt manor, and we will do our best to implement any criticism, as well
+            as promptly adding anyone who wants to be a part of our service
+          </p>
+        </div>
+      </div>
+      <div id="content3" class="content">
+        <div class="content-left">
+          <h1>Never Ghosted</h1>
+          <p>We are transparent in how we handle our code, and we will never leave a contact form unanswered, we 
+            value user feedback, it helps us move our application forward. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© Copyright 2023 PortfoliYou</p>
+  </div>
+
+  </div>
+  <script>
+    var content1 = document.getElementById("content1");
+    var content2 = document.getElementById("content2");
+    var content3 = document.getElementById("content3");
+    var btn1 = document.getElementById("btn1");
+    var btn2 = document.getElementById("btn2");
+    var btn3 = document.getElementById("btn3");
+
+    let contentGroup = {
+      "content1": content1,
+      "content2": content2,
+      "content3": content3,
+      "show":function(){
+        console.log(this.content1,this.content2,this.content3);
+      }
+    };
+
+    let buttonGroup = {
+      "btn1": btn1,
+      "btn2": btn2,
+      "btn3": btn3,
+      "show":function(){
+        console.log(this.btn1,this.btn2,this.btn3);
+      }
+    };
+
+    function openMagic() {
+      content1.style.transform = "translateX(0)";
+      content2.style.transform = "translateX(2000px)";
+      content3.style.transform = "translateX(2000px)";
+      btn1.style.color = "#4E888F";
+      btn2.style.color = "#191919";
+      btn3.style.color = "#191919";
+
+    }
+
+    function openQuick() {
+      content1.style.transform = "translateX(2000px)";
+      content2.style.transform = "translateX(0px)";
+      content3.style.transform = "translateX(2000px)";
+      btn2.style.color = "#4E888F";
+      btn1.style.color = "#191919";
+      btn3.style.color = "#191919";
+    }
+
+    function openTransparent() {
+      content1.style.transform = "translateX(2000px)";
+      content2.style.transform = "translateX(2000px)";
+      content3.style.transform = "translateX(0px)";
+      btn3.style.color = "#4E888F";
+      btn2.style.color = "#191919";
+      btn1.style.color = "#191919";
+    }
+  </script>
+</body>
+
+</html>
